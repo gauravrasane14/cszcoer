@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Corner</title>
+    <link rel="stylesheet" href="studentcorner.css">
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="gndlogo.webp" alt="University Logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="gallery.html">Events Gallery</a></li>
+            <li><a href="studentcorner.html">Study Corner</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- Section Title -->
+    <div class="section-title">
+        <h2>Study Corner</h2>
+        <p>Access Resources for each semester and subjects below.</p>
+    </div>
+
+    <!-- Semester 3 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester3')">
+        <div class="triangle"></div>
+        <h3>SEMESTER 3</h3>
+        <div class="subjects" id="semester3">
+            <a href="https://drive.google.com/drive/folders/1AcNXA-2tTOE3fJS7fk8HWkl_-bjCjkKx?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Mathematics III</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1OejqZLooa_jMW9Sgb6tICW3N2LERcicK?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Operating Systems</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1ofl483r8tErfbvhn-5nkJTqE-uxmqrmr?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Data Structures</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/13rkIUGQTOZcSWI5iEFOH0BIQDhzN1oBM?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">DDCO</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1m85x3dJepeohZYi9Z0EFVT7VjN50T9lc?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">R Language</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1NnK3LwcNt59G4xWfKkaMqbHtM7xhJ2Ke?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">DS Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1v0VIp9-ILQykh4s-GBOFxVG8mqvjtdGM?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">PHP</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 5 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester5')">
+        <div class="triangle"></div>
+        <h3>SEMESTER 5</h3>
+        <div class="subjects" id="semester5">
+            <a href="https://drive.google.com/drive/folders/1VIGRboMIk-A8_FXEEIi5ifjhKLe6yl52?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Software Engineering</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1zF6p8Y2R9HRsx0cQ9soPRMIt9J0sa3iB?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Computer Networks</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1u9UIrzbpqwXAI2yo250MSz81KurwSy4k?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Theory of computation</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Ta-yb6YkmtPVO5C01Vdm6Z05J9mn472x?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Data Warehouse</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1NVuNAmP1eM3kqnjdDGuM4BQzlDVNqU-I?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Data Visualization Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1NVuNAmP1eM3kqnjdDGuM4BQzlDVNqU-I?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">Research Methadology</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1WNzKV8BmtJfcdz1x8a7QS4UQM8813OBL?usp=sharing" class="subject" target="_blank">
+                <div class="subject-title">EVS</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <!-- <p>Phone Number: (123) 456-7890</p> -->
+            <p>Email: info@gndec.com</p>
+            <p>Address: Guru Nanak Dev Engineering College, Mailoor Road, Bidar, KA-585403</p>
+            <p>Designed & Developed by Ankit & Nikhil</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle subjects
+        function toggleSubjects(semesterId) {
+            const subjects = document.getElementById(semesterId);
+            if (subjects.style.display === "none" || subjects.style.display === "") {
+                subjects.style.display = "grid"; // Show subjects as a grid
+            } else {
+                subjects.style.display = "none"; // Hide subjects
+            }
+        }
+
+        // JavaScript function to toggle navbar menu on mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

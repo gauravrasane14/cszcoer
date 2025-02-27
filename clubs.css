@@ -1,0 +1,192 @@
+:root {
+    --white: #ffffff;
+    --text-color: #000; /* Adjust as needed */
+    --primary-color: #062a78; /* Define your primary color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 62px;
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color); /* Change to dark text color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: rgb(6, 42, 120);
+    outline: 2px dashed #ccc; /* Outline for focus */
+}
+
+/* Mobile View: Hide the navbar links and show the menu icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        right: 0;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #062a78;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Gallery item styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: 2px solid #062a78;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #062a78;
+}
+
+.gallery-item .details {
+    background-color: white;
+    color: #062a78;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for desktop */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover .details {
+    background-color: #ffffff;
+    color: #062a78;
+    font-weight: bold;
+}
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px; /* Smaller gap for mobile */
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .details {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+.flash-news {
+    background-color: #f8f8f8;
+    padding: 2px;
+    background-color: #062a78;
+    margin: 0px 0;
+    color: #ffffff;
+}
+
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px;
+    width: 100%;
+    position: static;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url(background.webp);
+}
+
+.developername1 {
+    color: white;
+    text-decoration: none;
+  }

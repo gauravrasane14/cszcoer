@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="zcoer-gif1.gif" alt="University Logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="staff.html">Staff Section</a></li>
+            <li><a href="student.html">Student Section</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+    <!-- Notice -->
+    <section class="flash-news">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          <p>Current Openings - No any club openings right now!</p>
+        </marquee>
+    </section>
+
+    <div class="gallery-title">CLUBS</div>
+
+    <div class="gallery">
+        <!-- Gallery Item 1 -->
+        <a href="aces.html" class="gallery-item">
+            <img src="club/aces.jpg" alt="ACES">
+            <div class="details">
+                Association of Computer Engineering Students (ACES)
+            </div>
+        </a>
+
+        <!-- Gallery Item 2 -->
+        <a href="codingclub.html" class="gallery-item" target="_blank">
+            <img src="club/aiml.png" alt="Neuro Nova (AIML Club)">
+            <div class="details">
+                Neuro Nova (AIML Club)
+            </div>
+        </a>
+
+        <!-- Gallery Item 3 -->
+        <a href="codingclub.html" class="gallery-item" target="_blank">
+            <img src="club/cyber.png" alt="Secure Sphere (Cyber & Web Security Club)">
+            <div class="details">
+                Secure Sphere (Cyber & Web Security Club)
+            </div>
+        </a>
+
+        <!-- Gallery Item 4 -->
+        <a href="codingclub.html" class="gallery-item" target="_blank">
+            <img src="club/android.png" alt="App Loom (Mobile & Web App Club)">
+            <div class="details">
+                App Loom (Mobile & Web App Club)
+            </div>
+        </a>
+         <!-- Gallery Item 5 -->
+         <a href="codingclub.html" class="gallery-item" target="_blank">
+            <img src="club/cloud.webp" alt="AstraCloud (Blockchain & Cloud Club)">
+            <div class="details">
+                AstraCloud (Blockchain & Cloud Club)
+            </div>
+        </a>
+        <!-- Gallery Item 5 -->
+        <a href="codingclub.html" class="gallery-item" target="_blank">
+            <img src="club/forms.png" alt="Membership Openings/Forms">
+            <div class="details">
+                Club Membership Openings/Forms
+            </div>
+        </a>
+    </div>
+    
+    <!-- Contact Information Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <p>Email: zcoer@zealeducation.com</p>
+            <p>Tel: +91 2067206000</p>
+            <p>Address: 3rd Floor, D-BLDG, Survey No.39, Zeal College of Engineering and Research, Narhe-Dhayari Road, Narhe, Pune-411041</p>
+            <p>&copy; Designed & Developed by <a class="developername1" href="https://www.linkedin.com/in/gauravrasane14/" target="_blank">Gaurav Rasane</a> of Computer Engg. Dept. ZCOER</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+

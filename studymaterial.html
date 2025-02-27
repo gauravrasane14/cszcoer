@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material</title>
+    <link rel="stylesheet" href="studymaterial.css">
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="zcoer-gif1.gif" alt="University Logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="staff.html">Staff Section</a></li>
+            <li><a href="student.html">Student Section</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- Section Title -->
+    <div class="section-title">
+        <h2>Study Material - Computer Engineering</h2>
+        <p>Access Resources for each semester and subjects below.<br>Students can upload study mateial in the folders.</p>
+    </div>
+
+    <!-- pyq Section -->
+    <div class="semester-section" onclick="toggleSubjects('pyq1')">
+        <div class="triangle"></div>
+        <h3>Previous Year Question Papers</h3>
+        <div class="subjects" id="pyq1">
+            <a href="https://drive.google.com/drive/folders/1KOGtfvUtwDn7XRRGUdiB6cgrPoDAH-Dq" class="subject" target="_blank">
+                <div class="subject-title">SE</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1h9qUmV077KKJp1xz4hO4Cex2dsWScd3n" class="subject" target="_blank">
+                <div class="subject-title">TE</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1FGPqBUNPRkMjxHQBJHz7xw2PPb4C5O2R" class="subject" target="_blank">
+                <div class="subject-title">BE</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 3 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester3')">
+        <div class="triangle"></div>
+        <h3>SE - SEMESTER 3</h3>
+        <div class="subjects" id="semester3">
+            <a href="https://drive.google.com/drive/folders/1NbrEmgSOvn_-rarfYI63J6zs2ihRqltD?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Discrete Mathematics</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1qHJtDNDjJ49SEuVbXSHWzpd689l2ZRf2?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Fundamentals of Data Structures</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1erSsroADSWIeTd7-GgWSxDftAqwlDnTR?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Object Oriented Programming (OOP)</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/17qvUX1Nhpo1nubqDZyLhekNV1ofWn-K6?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Computer Graphics</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1GVZIzj3E1gqPKvLACiIgn4yuJkQ-PfQp?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Digital Electronics and Logic Design</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1z7gv3X9OQzwDiIC4IApaR7-2DVcxF1AS?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Data Structures Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1hYRicFAn9nyIXWN4yUqO3xFsEWjLhyOE?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">OOP and CG Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1DOpj0k3oo56s_cApRxa02JlzuN9oUH-c?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Digital Electronics Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/10wqIbEDGAA4hbD-oBaQNrmiESYWaMfoL?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Business Communication Skills</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1NRcmXxgqxYHlZPvPvSqHeWYuDNKEmveF?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Humanity and Social Science</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/19TgmitQefAsF-Jz2JHDjRR6siijLfzx0?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Audit Course 3</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 4 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester4')">
+        <div class="triangle"></div>
+        <h3>SE - SEMESTER 4</h3>
+        <div class="subjects" id="semester4">
+            <a href="https://drive.google.com/drive/folders/1mi0RF8A2itamZGuHmEAQliJ_1DtsxDej?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Engineering Mathematics III</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1C2M073mxJGkliEPZmYS-a7C88jorFWMd?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Data Structures and Algorithms</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1KCkM0-Xm2YvBbpFemfiQs7k-cavO3tmO?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Software Engineering</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1FKrmO1WPSjwl6ESrb2EkpSR-P5Ipyr7o?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Microprocessor</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1o0sHxRfZkDS5GGJ2QxCtOaizy164HC3a?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">DSA Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1PJRHMq-PMVqSreQ8peTTv9Op9pg4sVqo?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Microprocessor Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1fjQ4ZtU7PNWhN9K9fgERJdcLQIzr0GF7?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">PBL II</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1EeN5s98ektgOsYBScOiRNv9N-tvSQ9ij?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Code of Conduct</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1SvhnJ0YrbART8E-aXMjBaC3SslKKO3vO?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Audit Course 4</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 5 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester5')">
+        <div class="triangle"></div>
+        <h3>TE - SEMESTER 5</h3>
+        <div class="subjects" id="semester5">
+            <a href="https://drive.google.com/drive/folders/15kdLCdMFBCpyGNKHfRJV08JhXJtWZCFw?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Database Management Systems</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1nFhCIdPRQoFRls8p0tmMUfwrAHfaDtGQ?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Theory of Computation</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1lo35SQNNn7uHeJIpiGqo2bcJaFjuem8O?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Systems Programming and Operating System</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1c1hNRDhlx3bDgYpHeUfMvcaL8amdsSkX?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Computer Networks and Security</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1CIN1Ve0RQ2a1dHWvIwET_Y-tTGCKh78M?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Elective I</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1kzlTOC6Pih6z2gLaLB7Vkrlhc92_KGxp?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">DBMS Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1TnonknNqchtCtMBhiEMxGL4sGAWE9A3F?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">CNS Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/17Tern9SeROjZdy4Jv1CGjzoy9WZcCStA?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Lab Practice - I</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1DFe_6rZABHaF5Gsdi-czObl59J6YrIvr?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Seminar and Technical Communication</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 6 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester6')">
+        <div class="triangle"></div>
+        <h3>TE - SEMESTER 6</h3>
+        <div class="subjects" id="semester6">
+            <a href="https://drive.google.com/drive/folders/1e6TFPeUKC_C0BEAp-5ahfdwQtRkLONb_?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Data Science and Big Data Analytics</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1na6APTQNnLM0rx5BqpJaMihny_M8D5HU?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Web Technology</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1zQRQaV2viQj1P3fOWJqwNIbmPySwIcCO?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Artificial Intelligence</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1EIUr1mVvR6uMpxZZQzNJp1XBo96AtqVA?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Elective II - Cloud Computing</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1PpYuu8syGF3UUkHI7aH7yfmy8r_uaWI1?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Internship</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1jH2eWuk0lcrlMCV-5RRvWSlNyRmyd5xN?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">DSBDA Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1VZD9OIz61sLpFppjp_-KbDHf9SwZIvHI?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">WT Lab</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Ct5HE6UKmlewviDQ_qCBS8H3NpqPvrft?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Lab Practice - II</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1YAZeHXzN5vjrWX_RUrZ2WAswaLT_LYzA?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Audit Course 6</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 7 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester7')">
+        <div class="triangle"></div>
+        <h3>BE - SEMESTER 7</h3>
+        <div class="subjects" id="semester7">
+            <a href="https://drive.google.com/drive/folders/1a4w9MvsfJhQXQQ6zePuln1V9OBGimpNp?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Design and Analysis of Algorithms</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1PG7IjZE2seNzxjqZdBO84aiwoqw4ibvN?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Machine Learning</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Z70hK6DkN_Jvc3Z24JcZKK4cUL7E5knr?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Blockchain Technology</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1QqSDcfFbwf5XA-u29QQji1sxlWhrLukA?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Elective III</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Yg6KKWcP4mQmKEM6Ih8NJFR75gsq-DZ-?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Elective IV</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1RR_BEmqNWXzWbRieUqkkNUj71h1uFyCm?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Lab Practice III</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1HupvoIzswG0tnTEzhhgvRfP13WWouSzS?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Lab Practice IV</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1dcqWkSUSc2HI8mEJF5zLs0o4qEJv3MKr?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Project Stage I</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1TpS9dws_BDgYXyvd8gmG_oZNjlC5OLLF?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Audit Course 7</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 8 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester8')">
+        <div class="triangle"></div>
+        <h3>BE - SEMESTER 8</h3>
+        <div class="subjects" id="semester8">
+            <a href="https://drive.google.com/drive/folders/1h587UzpOAhljkmjBeEK_AieRhuh9nUk0?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">High Performance Computing</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/159r5y1G021CgcRMYiGKMlvy1GdKPPeXl?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Deep Learning</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1NE3ltVgJVglo8e1ES3a1jaWP_mWDZjcc?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Elective V</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1THbLL6hHv9i1zEW5z96SKlyyr4nbKuYO?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Elective VI</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1-IhiG-IwdLg5J2OQL5HG2c7DX8RxcEzU?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Lab Practice V</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/10kVhb0RIKk2M-OqdS6Av1V8T0FxspsK-?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Lab Practice VI</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1rCDIpbu7JJZ727_Bwbfep4dJqTTlwnYb?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Project Stage II</div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1HOG8v43r-P4P-h50lsHyTDGxrNDXIby8?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">Audit Course 8</div>
+            </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <p>Email: zcoer@zealeducation.com</p>
+            <p>Tel: +91 2067206000</p>
+            <p>Address: 3rd Floor, D-BLDG, Survey No.39, Zeal College of Engineering and Research, Narhe-Dhayari Road, Narhe, Pune-411041</p>
+            <p>&copy; Designed & Developed by <a class="developername1" href="https://www.linkedin.com/in/gauravrasane14/" target="_blank">Gaurav Rasane</a> of Computer Engg. Dept. ZCOER</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle subjects
+        function toggleSubjects(semesterId) {
+            const subjects = document.getElementById(semesterId);
+            if (subjects.style.display === "none" || subjects.style.display === "") {
+                subjects.style.display = "grid"; // Show subjects as a grid
+            } else {
+                subjects.style.display = "none"; // Hide subjects
+            }
+        }
+
+        // JavaScript function to toggle navbar menu on mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

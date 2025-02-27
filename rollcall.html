@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollCall</title>
+    <link rel="stylesheet" href="studymaterial.css">
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="zcoer-gif1.gif" alt="University Logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="staff.html">Staff Section</a></li>
+            <li><a href="student.html">Student Section</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- Section Title -->
+    <div class="section-title">
+        <h2>Division-wise RollCall - Computer Engineering</h2>
+        <p>Access rollcalls for each class and division below.</p>
+    </div>
+
+    <!-- Semester 3 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester3')">
+        <div class="triangle"></div>
+        <h3>SE RollCall</h3>
+        <div class="subjects" id="semester3">
+            <a href="https://docs.google.com/spreadsheets/d/1QHslccEmqWCYd7QrCkhJXtU0pIvYiHEN/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">SE - A</div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1QJVCpNLJPBHrYRTqbFmkjS309_GZ2nsQ/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">SE - B</div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1QJQY2jIL0ZvBpe3vGujqu-nJFHCcWqqI/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">SE - C</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 4 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester4')">
+        <div class="triangle"></div>
+        <h3>TE Rollcall</h3>
+        <div class="subjects" id="semester4">
+            <a href="https://docs.google.com/spreadsheets/d/1QJxELJOeek0mWXO-qVyu6uYbY2MXLd7L/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">TE - A</div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1QNtnnBAYsJ7snouFpNCDbXAfhRI0qYHu/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">TE - B</div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1QOIphBONT-CFuXtVgXRd5AowKOafaUMr/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">TE - C</div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Semester 8 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester8')">
+        <div class="triangle"></div>
+        <h3>BE Rollcall</h3>
+        <div class="subjects" id="semester8">
+            <a href="https://docs.google.com/spreadsheets/d/1QObHRjKU3Xr6f4aA1WOxcWxWnzwmQGKF/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">BE - A</div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1QOs5UAgvK-P44rQtyB0exi_uCzo0sbin/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">BE - B</div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1QQEPKFplN3CoVp9CNnviPFlpkwVAMprW/edit?usp=drive_link&ouid=106405556159428253042&rtpof=true&sd=true" class="subject" target="_blank">
+                <div class="subject-title">BE - C</div>
+            </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <p>Email: zcoer@zealeducation.com</p>
+            <p>Tel: +91 2067206000</p>
+            <p>Address: 3rd Floor, D-BLDG, Survey No.39, Zeal College of Engineering and Research, Narhe-Dhayari Road, Narhe, Pune-411041</p>
+            <p>&copy; Designed & Developed by <a class="developername1" href="https://www.linkedin.com/in/gauravrasane14/" target="_blank">Gaurav Rasane</a> of Computer Engg. Dept. ZCOER</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle subjects
+        function toggleSubjects(semesterId) {
+            const subjects = document.getElementById(semesterId);
+            if (subjects.style.display === "none" || subjects.style.display === "") {
+                subjects.style.display = "grid"; // Show subjects as a grid
+            } else {
+                subjects.style.display = "none"; // Hide subjects
+            }
+        }
+
+        // JavaScript function to toggle navbar menu on mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

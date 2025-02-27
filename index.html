@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS ZCOER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://zcoer.in/" target="_blank"> <img src="zcoer-gif1.gif" alt="University Logo" class="img1"></a>
+            <!-- <a href="index.html"> <img src="comp.png" alt="Department Logo" class="img2"> </a> -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about2">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="staff.html">Staff Section</a></li>
+            <li><a href="student.html">Student Section</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <section class="flash-news">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          <p>Welcome to Department of Computer Engineering, ZCOER.</p>
+        </marquee>
+    </section>
+
+    <!-- Header Section with Slideshow -->
+    <header class="header" id="home">
+    </header>
+    
+
+     <!-- From HOD's Desk Section -->
+    <section class="about" id="about1">
+        <div class="about-container">
+            <img src="faculty/aparna.jpg" alt="University Building" class="about-image">
+            <div class="about-text">
+                <h2>From HOD's Desk</h2>
+                <p><h3>Prof. Aparna V. Mote</h3>
+                    Head of Computer Engineering<br>
+                    <br>
+                    Computers have always been at the forefront of major technological revolutions in the last century, the impact of which is felt to date. All such revolutions have always had one individual at the center of it that has been the driving force behind the event, who sought to quench their curiosity and thirst for knowledge by tirelessly pursuing a goal and trying to solve a problem faced by humanity at the time. This could not have been possible without educating oneself which brings us to the importance of arming oneself with the knowledge required to survive in this ever dynamic world and do something that changes the course of humanity altogether in a beneficial way. Engineers have enabled many such technological revolutions especially over the past three decades by using their knowledge to bring something great to life.
+                    <br>
+                    <i>“One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man”. 
+                    <br><pre>   – Elbert Hubbard</i></pre>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about2">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Our Department</h2>
+                <p>The Department of Computer Engineering was set up under Zeal College of Engineering and Research in 2007. Our sole objective is and will always be to provide the learner with a repertoire of knowledge that will serve them for a lifetime. We have 13 well equipped labs with the latest software installed. The high speed internet facility (50 Mbps lease line) coupled with regular seminars and workshops held for the students and faculty ensures that the knowledge-gathering process is a holistic one. The IBM Software Lab for Emerging Technologies, set up in collaboration with IBM, is another initiative of the Department and we are making sincere efforts to ensure that every single student gets certified by this Lab. Additionally, the Zeal Firefox Club involves the students wherein they can engage in the development of Firefox products and applications. They are active volunteers in Nirmaan and Talentron, which are the technical and cultural festivals held at Zeal annually and which witness the active participation of the students.</p>
+            </div>
+            <img src="lab/dbmslab.jpg" alt="University Building" class="about-image">
+        </div>
+    </section>
+
+<div class="card-container">
+    <section id="card1" class="card">
+      <img src="vision.jpg" alt="Card 1 Image" class="card-image" />
+      <div class="card__content">
+        <p class="card__title">Vision</p>
+        <p class="card__description">
+            To emerge as a department of repute in Computer Engineering through innovative teaching, research, social responsibility, and entrepreneurial skills, developing responsible IT professionals.
+        </p>
+      </div>
+    </section>
+  
+    <section id="card2" class="card">
+      <img src="mission.jpg" alt="Card 2 Image" class="card-image" />
+      <div class="card__content">
+        <p class="card__title">Mission</p>
+        <p class="card__description">
+            M1: To provide in depth technical education and hands-on experiences in Computer Engineering using modern tools and technologies.<br><br>
+            M2: To endeavor innovative research culture to fulfill the needs of industry and society.<br><br>
+            M3: To instil in students a deep sense of social responsibility.<br><br>
+            M4: To strengthen collaboration between industry and academia, fostering the development of entrepreneurial skills among the students.<br><br>
+        </p> 
+      </div>
+    </section>
+</div>
+<br>
+
+<section class="faculty1">
+        <h2>Our Dedicated Faculty</h2>
+        
+        <div class="faculty-container1" id="facultyContainer">
+            <div class="faculty-item1" onclick="openModal('aparnamoteModal')">
+                <img src="faculty/AparanaMote.jpg" alt="Prof. Aparna V. Mote">
+                <h3>Prof. Aparna V. Mote</h3>
+                <h5>Head of Department</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('maheshnavleModal')">
+                <img src="faculty/MaheshNavale.jpg" alt="Dr. Mahesh Navale">
+                <h3>Dr. Mahesh Navale</h3>
+                <h5>Associate Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('nrModal')">
+                <img src="faculty/NitishaRajgure.jpg" alt="Prof. Nitisha Rajgure">
+                <h3>Prof. Nitisha Rajgure</h3>
+                <h5>Associate Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('rpModal')">
+                <img src="faculty/RakhiPunwatkar.jpg" alt="Prof. Rakhi S. Punwatkar">
+                <h3>Prof. Rakhi S. Punwatkar</h3>
+                <h5>Associate Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('balajiModal')">
+                <img src="faculty/BalajiChougule.jpg" alt="Prof. Balaji A. Chaugule">
+                <h3>Prof. Balaji A. Chaugule</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('praveenModal')">
+                <img src="faculty/PraveenB.jpg" alt="Prof. Praveen Blessington Thummalakunta">
+                <h3>Prof. Praveen Blessington Thummalakunta</h3>
+                <h5>Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('roshaniModal')">
+                <img src="faculty/RoshaniParate.jpg" alt="Prof. Roshani A. Parate">
+                <h3>Prof. Roshani A. Parate</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('nikitajModal')">
+                <img src="faculty/NikitaJoshi.jpg" alt="Prof. Nikita P. Joshi">
+                <h3>Prof. Nikita P. Joshi</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('arunadeviModal')">
+                <img src="faculty/ArunadeviKhapale.jpg" alt="Prof. Arunadevi S. Khaple">
+                <h3>Prof. Arunadevi S. Khaple</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('pmModal')">
+                <img src="faculty/PayalMahajan.jpg" alt="Prof. Payal D. Mahajan">
+                <h3>Prof. Payal D. Mahajan</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('sureshModal')">
+                <img src="faculty/SurshShirbahadurkar.jpg" alt="Dr. Suresh D. Shirbahadurkar">
+                <h3>Dr. Suresh D. Shirbahadurkar</h3>
+                <h5>Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('mandarModal')">
+                <img src="faculty/MandarMokashi.jpg" alt="Dr. Mandar Krishnarao Mokashi">
+                <h3>Dr. Mandar Krishnarao Mokashi</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('rahulModal')">
+                <img src="faculty/RahulNaware.jpg" alt="Prof. Rahul Gautam Naware">
+                <h3>Prof. Rahul Gautam Naware</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('pranaliModal')">
+                <img src="faculty/PranaliniJoshi.jpg" alt="Prof. Pranalini Amit Joshi">
+                <h3>Prof. Pranalini Amit Joshi</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('magarModal')">
+                <img src="faculty/ShamsundarMagar.jpg" alt="Prof.Shyamsundar Magar">
+                <h3>Prof. Shyamsundar Magar</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('juberModal')">
+                <img src="faculty/blankprofile.png" alt="Prof.Juber Salim Nadaf">
+                <h3>Prof. Juber Salim Nadaf</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('khushbuModal')">
+                <img src="faculty/KhushbuKhandait.jpg" alt="Dr.Khushbu Khandait">
+                <h3>Dr. Khushbu Khandait</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('nidhiModal')">
+                <img src="faculty/blankprofile.png" alt="Prof.Nidhi Upadhey">
+                <h3>Prof. Nidhi Upadhey</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('rrjModal')">
+                <img src="faculty/RupaliJadhav.jpg" alt="Prof. Rupali R. Jadhav">
+                <h3>Prof. Rupali R. Jadhav</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('pijdurkarModal')">
+                <img src="faculty/AshwiniPijdurkar.jpg" alt="Prof. Ashwini S. Pijdurkar">
+                <h3>Prof. Ashwini S. Pijdurkar</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('kinjalModal')">
+                <img src="faculty/KinjalVele.jpg" alt="Kinjal K. Vele">
+                <h3>Kinjal K. Vele</h3>
+                <h5>Technical Assistant</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('pansambalModal')">
+                <img src="faculty/BHPansambal.jpg" alt="Prof. B. H. Pansamba">
+                <h3>Prof. B. H. Pansamba</h3>
+                <h5>Assistent Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('gajananModal')">
+                <img src="faculty/GajananBhusari.jpg" alt="Prof. Gajanan R. Bhusare">
+                <h3>Prof. Gajanan R. Bhusare</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('vishalModal')">
+                <img src="faculty/Vishal Nayakwadi.jpg" alt="Prof. Vishal N. Nayakwadi">
+                <h3>Prof. Vishal N. Nayakwadi</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('wrushabhModal')">
+                <img src="faculty/WrushabhSirsat.jpg" alt="Prof. Wrushabh S. Sirsat">
+                <h3>Prof. Wrushabh S. Sirsat</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('anujaModal')">
+                <img src="faculty/AnujaGarande.jpg" alt="Prof. Anuja S. Garande">
+                <h3>Prof. Anuja S. Garande</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('amarModal')">
+                <img src="faculty/AmarChadchankar.jpg" alt="Prof. Amarnath Chadchankar">
+                <h3>Prof. Amarnath Chadchankar</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('amoljModal')">
+                <img src="faculty/AmolJadhav.jpg" alt="Prof. Amol A. Jadhav">
+                <h3>Prof. Amol A. Jadhav</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('nilamModal')">
+                <img src="faculty/NilamHonmane.jpg" alt="Prof. Nilam S. Honmane">
+                <h3>Prof. Nilam S. Honmane</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('priyankaModal')">
+                <img src="faculty/PriyankaShingate.jpg" alt="Prof. Priyanka Shingate">
+                <h3>Prof. Priyanka Shingate</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+
+            <div class="faculty-item1" onclick="openModal('asModal')">
+                <img src="faculty/AshwiniShinde.jpg" alt="Prof. Ashwini Shinde">
+                <h3>Prof. Ashwini Shinde</h3>
+                <h5>Assistant Professor</h5>
+            </div>
+        </div>
+    </section>
+
+    <div id="aparnamoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('aparnamoteModal')">&times;</span>
+            <img src="faculty/AparanaMote.jpg" alt="Prof. Aparna V. Mote" class="modal-image">
+            <h2>Prof. Aparna V. Mote</h2>
+            <p>Head of Department of Computer Engineering</p>
+            <p>M.E. (Computer Engineering)</p>
+            <p>Experience: Teaching - 13.9 Years</p>
+            <p>Expertise: Data Mining and Information retrival, Machine Learning</p>
+            <p>Email: aparna.mote@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="maheshnavleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('maheshnavleModal')">&times;</span>
+            <img src="faculty/MaheshNavale.jpg" alt="Dr. Mahesh Navale" class="modal-image">
+            <h2>Dr. Mahesh Navale</h2>
+            <p>Professor</p>
+            <p>Ph.D M.E. (E &TC)</p>
+            <p>Experience: Teaching - 19 Years Industrial - 5 Years</p>
+            <p>Expertise: Wireless Communication</p>
+            <p>Email: mahesh.navale@zealeducation.com</p>
+        </div>
+    </div>
+    
+    <div id="nrModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nrModal')">&times;</span>
+            <img src="faculty/NitishaRajgure.jpg" alt="Prof. Nitisha Rajgure" class="modal-image">
+            <h2>Prof. Nitisha Rajgure</h2>
+            <p>Associate Professor</p>
+            <p>M.E. (Computer Science and Engineering)</p>
+            <p>Experience: Teaching - 11 Years Industrial - 6 Years</p>
+            <p>Expertise: Data Structure and Algorithm</p>
+            <p>Email: nitisha.rajgure@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="rpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('rpModal')">&times;</span>
+            <img src="faculty/RakhiPunwatkar.jpg" alt="Prof. Rakhi S. Punwatkar" class="modal-image">
+            <h2>Prof. Rakhi S. Punwatkar</h2>
+            <p>Associate Professor</p>
+            <p>M.E.</p>
+            <p>Experience: Teaching - 16 Years Industrial - 6 Months</p>
+            <p>Expertise: VLSI & Embedded system</p>
+            <p>Email: rakhi.punwatkar@zealeducation.com</p>
+        </div>
+    </div>
+    
+    <div id="balajiModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('balajiModal')">&times;</span>
+            <img src="faculty/BalajiChougule.jpg" alt="Prof. Balaji A. Chaugule" class="modal-image">
+            <h2>Prof. Balaji A. Chaugule</h2>
+            <p>Assistent Professor</p>
+            <p>M.E. (Computer Engineering)</p>
+            <p>Experience: Teaching - 12 Years</p>
+            <p>Expertise: Cloud Computing, Mobile Security, Parallel Computing, Artificial Intelligence</p>
+            <p>Email: balaji.chaugule@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="praveenModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('praveenModal')">&times;</span>
+            <img src="faculty/PraveenB.jpg" alt="Prof. Praveen Blessington Thummalakunta" class="modal-image">
+            <h2>Prof. Praveen Blessington Thummalakunta</h2>
+            <p>Professor</p>
+            <p>Ph.D.</p>
+            <p>Experience: Teaching - 18 Years</p>
+            <p>Expertise: Machine Learning, AI, Deep Learning, IoT, SoC, NoC</p>
+            <p>Email: praveen.thummalakunta@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="roshaniModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('roshaniModal')">&times;</span>
+            <img src="faculty/RoshaniParate.jpg" alt="Prof. Roshani A. Parate" class="modal-image">
+            <h2>Prof. Roshani A. Parate</h2>
+            <p>Assistant Professor</p>
+            <p>Ph.D. Pursuing</p>
+            <p>Experience: Teaching - 10 Years</p>
+            <p>Expertise: Computer Science and Engineering</p>
+            <p>Email: roshani.parate@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="nikitajModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nikitajModal')">&times;</span>
+            <img src="faculty/NikitaJoshi.jpg" alt="Prof. Nikita P. Joshi" class="modal-image">
+            <h2>Prof. Nikita P. Joshi</h2>
+            <p>Assistant Professor</p>
+            <p>M.E.</p>
+            <p>Experience: Teaching - 6 Years</p>
+            <p>Expertise: E&TC (Signal Processing)</p>
+            <p>Email: nikita.joshi@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="arunadeviModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('arunadeviModal')">&times;</span>
+            <img src="faculty/ArunadeviKhapale.jpg" alt="Prof. Arunadevi S. Khaple" class="modal-image">
+            <h2>Prof. Arunadevi S. Khaple</h2>
+            <p>Assistant Professor</p>
+            <p>M.Tech (Computer Science and Engineering)</p>
+            <p>Experience: Teaching - 4.9 Years</p>
+            <p>Expertise: Computer Science and Engineering</p>
+            <p>Email: arunadevi.rajeshware@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="pmModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pmModal')">&times;</span>
+            <img src="faculty/PayalMahajan.jpg" alt="Prof. Payal D. Mahajan" class="modal-image">
+            <h2>Prof. Payal D. Mahajan</h2>
+            <p>Assistant Professor</p>
+            <p>M.E.</p>
+            <p>Experience: Teaching - 3.3 Years</p>
+            <p>Expertise: VLSI & Embedded system</p>
+            <p>Email: payal.mahajan@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="sureshModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sureshModal')">&times;</span>
+            <img src="faculty/SurshShirbahadurkar.jpg" alt="Dr. Suresh D. Shirbahadurkar" class="modal-image">
+            <h2>Dr. Suresh D. Shirbahadurkar</h2>
+            <p>Professor</p>
+            <p>Ph.D.</p>
+            <p>Experience: Teaching - 28 Years</p>
+            <p>Expertise: Power Electronics, Speech Processing</p>
+            <p>Email: suresh.Shirbahadurkar@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="mandarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('mandarModal')">&times;</span>
+            <img src="faculty/MandarMokashi.jpg" alt="Dr. Mandar Krishnarao Mokashi" class="modal-image">
+            <h2>Dr. Mandar Krishnarao Mokashi</h2>
+            <p>Assistant Professor</p>
+            <p>Ph.D. Computer</p>
+            <p>Experience: Teaching - 7 Years Industrial- 15.5 years</p>
+            <p>Expertise: DBMS, Software Engineering</p>
+            <p>Email: mandar.mokashi@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="rahulModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('rahulModal')">&times;</span>
+            <img src="faculty/RahulNaware.jpg" alt="Prof. Rahul Gautam Naware" class="modal-image">
+            <h2>Prof. Rahul Gautam Naware</h2>
+            <p>Assistant Professor</p>
+            <p>M.E., E&TC.</p>
+            <p>Experience: Teaching - 18 Years</p>
+            <p>Expertise: Electronic circuit,VLSIDT</p>
+            <p>Email: rahul.naware@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="pranaliModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pranaliModal')">&times;</span>
+            <img src="faculty/PranaliniJoshi.jpg" alt="Prof. Pranalini Amit Joshi" class="modal-image">
+            <h2>Prof. Pranalini Amit Joshi</h2>
+            <p>Assistant Professor</p>
+            <p>M.E., Computer(Sci,Engg)</p>
+            <p>Experience: Teaching - 16 Years</p>
+            <p>Expertise: TOC</p>
+            <p>Email: pranalini.joshi@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="magarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('magarModal')">&times;</span>
+            <img src="faculty/ShamsundarMagar.jpg" alt="Prof.Shyamsundar Magar" class="modal-image">
+            <h2>Prof. Shyamsundar Magar</h2>
+            <p>Assistant Professor</p>
+            <p>M.E(Computer), PhD( Pursuing)</p>
+            <p>Experience: Teaching - 13 Years</p>
+            <p>Expertise: Web Technology</p>
+            <p>Email: shyamsundar.magar@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="juberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('juberModal')">&times;</span>
+            <img src="faculty/blankprofile.png" alt="Prof.Juber Salim Nadaf" class="modal-image">
+            <h2>Prof. Juber Salim Nadaf</h2>
+            <p>Assistant Professor</p>
+            <p>M.E(Computer), PhD( Pursuing)</p>
+            <p>Experience: Teaching - 1 Years Industrial- 10 years</p>
+            <p>Expertise: NLP</p>
+            <p>Email: juber.nadaf@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="khushbuModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('khushbuModal')">&times;</span>
+            <img src="faculty/KhushbuKhandait.jpg" alt="Dr.Khushbu Khandait" class="modal-image">
+            <h2>Dr. Khushbu Khandait</h2>
+            <p>Assistant Professor</p>
+            <p>PhD (Computer), M.E.(Computer)</p>
+            <p>Experience: Teaching - 1 Years Industrial- 7 years</p>
+            <p>Expertise: Web Application Development</p>
+            <p>Email: khushbu.khandait@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="nidhiModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nidhiModal')">&times;</span>
+            <img src="faculty/blankprofile.png" alt="Prof.Nidhi Upadhey" class="modal-image">
+            <h2>Prof. Nidhi Upadhey</h2>
+            <p>Assistant Professor</p>
+            <p>M.Tech (IT)</p>
+            <p>Experience: Teaching - 6.5 Years</p>
+            <p>Expertise: Problem Solving & Logic Building</p>
+            <p>Email: nidhi.upadhey@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="rrjModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('rrjModal')">&times;</span>
+            <img src="faculty/RupaliJadhav.jpg" alt="Prof. Rupali R. Jadhav" class="modal-image">
+            <h2>Prof. Rupali R. Jadhav</h2>
+            <p>Assistant Professor</p>
+            <p>M.E. (Computer Science and Engineering)</p>
+            <p>Experience: Teaching - 2.3 Years</p>
+            <p>Expertise: Computer Science and Engineering</p>
+            <p>Email: rupali.jadhav@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="pijdurkarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pijdurkarModal')">&times;</span>
+            <img src="faculty/AshwiniPijdurkar.jpg" alt="Prof. Ashwini S. Pijdurkar" class="modal-image">
+            <h2>Prof. Ashwini S. Pijdurkar</h2>
+            <p>Assistant Professor</p>
+            <p>M.Tech.</p>
+            <p>Experience: Teaching - 2 Years</p>
+            <p>Expertise: Digital Systems (Electronics & Telecommunication Engineering)</p>
+            <p>Email: ashwini.pijdurkar@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="kinjalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('kinjalModal')">&times;</span>
+            <img src="faculty/KinjalVele.jpg" alt="Kinjal K. Vele" class="modal-image">
+            <h2>Kinjal K. Vele</h2>
+            <p>Technical Assistant</p>
+            <p>MCA</p>
+            <p>Experience: Teaching - 7 Years Industrial - 5 Years</p>
+            <p>Expertise: Computer Application</p>
+            <p>Email: kinjal.vele@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="pansambalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pansambalModal')">&times;</span>
+            <img src="faculty/BHPansambal.jpg" alt="Prof. B. H. Pansambal" class="modal-image">
+            <h2>Prof. B. H. Pansambal</h2>
+            <p>Assistant Professor </p>
+            <p>M.E. Electronics, Ph.D. pursuing</p>
+            <p>Experience: Teaching - 17 Years Industrial - 2 Years</p>
+            <p>Expertise: Signal Processing, AI, etc</p>
+            <p>Email: babasaheb.pansambal@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="gajananModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gajananModal')">&times;</span>
+            <img src="faculty/GajananBhusari.jpg" alt="Prof. Gajanan R. Bhusare" class="modal-image">
+            <h2>Prof. Gajanan R. Bhusare</h2>
+            <p>Assistant Professor </p>
+            <p>ME (Computer Engineering),PhD (Pursuing)</p>
+            <p>Experience: 3.5 Years, Industrial - 16 Years</p>
+            <p>Expertise: Cloud Computing, Web Technology, Computer Networking</p>
+            <p>Email: gajanan.bhusare@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="vishalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('vishalModal')">&times;</span>
+            <img src="faculty/Vishal Nayakwadi.jpg" alt="Prof. Gajanan R. Bhusare" class="modal-image">
+            <h2>Prof. Gajanan R. Bhusare</h2>
+            <p>Assistant Professor </p>
+            <p>ME (Computer Engineering),PhD (Pursuing)</p>
+            <p>Experience: Teaching- 6.3 Years, Industry -6.4 years</p>
+            <p>Expertise: Software Testing, Networking</p>
+            <p>Email: vishal.nayakwadi@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="wrushabhModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('wrushabhModal')">&times;</span>
+            <img src="faculty/WrushabhSirsat.jpg" alt="Prof. Wrushabh S. Sirsat" class="modal-image">
+            <h2>Prof. Wrushabh S. Sirsat</h2>
+            <p>Assistant Professor </p>
+            <p>ME (Computer Sci & Engineering)</p>
+            <p>Experience: Teaching- 1.8 Years Industrial- 2.5 Years</p>
+            <p>Expertise: Object Oriented Programing</p>
+            <p>Email: wrushab.sirsat@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="anujaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('anujaModal')">&times;</span>
+            <img src="faculty/AnujaGarande.jpg" alt="Prof. Anuja S. Garande" class="modal-image">
+            <h2>Prof. Anuja S. Garande</h2>
+            <p>Assistant Professor </p>
+            <p>M.E.(CSE), PhD (Pursuing)</p>
+            <p>Experience: Teaching - 3 Years Industrial- 1 Years</p>
+            <p>Expertise: Computer Network, Cyber Security, IoT</p>
+            <p>Email: anuja.garande@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="amarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('amarModal')">&times;</span>
+            <img src="faculty/AmarChadchankar.jpg" alt="Prof. Amarnath Chadchankar" class="modal-image">
+            <h2>Prof. Amarnath Chadchankar</h2>
+            <p>Assistant Professor </p>
+            <p>Education</p>
+            <p>Experience: Teaching- 14.6 Year Industrial - 2 Years</p>
+            <p>Expertise: JAVA Full Stack Developer</p>
+            <p>Email: amarnath.chadchankar@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="amoljModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('amoljModal')">&times;</span>
+            <img src="faculty/AmolJadhav.jpg" alt="Prof. Amol A. Jadhav" class="modal-image">
+            <h2>Prof. Amol A. Jadhav</h2>
+            <p>Assistant Professor </p>
+            <p>ME (Computer Engineering)</p>
+            <p>Experience: Teaching- 1 Years industrial- 3 Years</p>
+            <p>Expertise: Data Science</p>
+            <p>Email: amol.jhadhav@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="nilamModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nilamModal')">&times;</span>
+            <img src="faculty/NilamHonmane.jpg" alt="Prof. Nilam S. Honmane" class="modal-image">
+            <h2>Prof. Nilam S. Honmane</h2>
+            <p>Assistant Professor </p>
+            <p>M.Tech (I.T.)</p>
+            <p>Experience: Teaching - 3.3 Years Industrial - 4.6 Years</p>
+            <p>Expertise: Human Computer Interaction</p>
+            <p>Email: nilam.honmane@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="priyankaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('priyankaModal')">&times;</span>
+            <img src="faculty/PriyankaShingate.jpg" alt="Prof. Priyanka Shingate" class="modal-image">
+            <h2>Prof. Priyanka Shingate</h2>
+            <p>Assistant Professor </p>
+            <p>M.Tech (I.T.)</p>
+            <p>Experience: Teaching - 1.6 Years</p>
+            <p>Expertise: Mobile Computing</p>
+            <p>Email: priyanka.shingate@zealeducation.com</p>
+        </div>
+    </div>
+
+    <div id="asModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('asModal')">&times;</span>
+            <img src="faculty/AshwiniShinde.jpg" alt="Prof. Ashwini Shinde" class="modal-image">
+            <h2>Prof. Ashwini Shinde</h2>
+            <p>Assistant Professor </p>
+            <p>M.Tech (I.T.)</p>
+            <p>Experience: Teaching - 6 Years</p>
+            <p>Expertise: Data Structure</p>
+            <p>Email: ashwini.shinde@zealeducation.com</p>
+        </div>
+    </div>
+
+
+    <script>
+        const facultyContainer = document.getElementById('facultyContainer');
+
+        // Function to automatically scroll the container to the next profile
+        function scrollToNextProfile() {
+            // Get the total width of all the profiles and the container's visible width
+            const totalWidth = facultyContainer.scrollWidth;
+            const visibleWidth = facultyContainer.clientWidth;
+
+            // Scroll by the width of one profile
+            const nextScrollPosition = facultyContainer.scrollLeft + visibleWidth;
+            
+            // If it reaches the end, loop back to the start
+            if (nextScrollPosition >= totalWidth) {
+                facultyContainer.scrollLeft = 0; // Scroll back to the start immediately
+            } else {
+                facultyContainer.scrollLeft = nextScrollPosition; // Scroll to the next profile
+            }
+        }
+
+    // Set an interval to call the function every 1 second (1000 milliseconds)
+    setInterval(scrollToNextProfile, 4500);
+
+    </script>
+
+    <!-- Overview Section 
+    <section class="overview">
+        <h2>Glimpses Of Departement</h2>
+        <div class="overview-container">
+            <div class="overview-item">
+                <img src="glimpse/ivc1.jpg" alt="guest3">
+                <div class="text-overlay">
+                    <p>Industrial Visits A. Y. 2023-24</p>
+                </div>
+            </div>
+            <div class="overview-item">
+                <img src="glimpse/befarewell22.png" alt="guest1">
+                <div class="text-overlay">
+                    <p>BE FAREWELL 2022</p>
+                </div>
+            </div>
+            <div class="overview-item">
+                <img src="glimpse/foraign.jpg" alt="guest2">
+                <div class="text-overlay">
+                    <p>Foreign Studies and Civil Services Awareness Program</p>
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
+
+    <!-- Achievements Section -->
+<section class="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement-cards">
+        <div class="achievement-card">
+            <img src="gallery/robo.jpg" alt="Conference Achievement">
+            <h3>Remarkable Achievement in the International RoboAnalyzer competition (ROC 2024) organized at IIT Delhi</h3>
+            <p> 9th November 2024
+                <br>
+                Mr. Manav Jori(BE R&A) & Mr. Nehal Rane(BE COMP) Secured 2nd Position and Won Cash Prize of Rs. 75000/- in the International RoboAnalyzer competition (ROC 2024)</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="gallery/ranangan.png" alt="Conference Achievement">
+            <h3>Winner of General Championship in RANNANGAN 2K24 at Zeal Institute</h3>
+            <p> 20 March 2024
+                <br>
+                Departement of Computer Engineering Won the General Championship of RANNANGAN 2K24 at Zeal Institute.</p>
+        </div>
+    </div>
+</section>
+
+
+    <section class="clubs-section">
+        <h2>Our Clubs</h2>
+        <div class="clubs-container">
+            <a href="clubs.html" class="club-item">
+                <img src="club/aces.jpg" alt="ACES">
+                <h3>Association of Computer Engineering Students (ACES)</h3>
+            </a>
+            <a href="clubs.html" class="club-item">
+                <img src="club/aiml.png" alt="Neuro Nova (AIML Club)">
+                <h3>Neuro Nova<br>(AIML Club)</h3>
+            </a>
+            <a href="clubs.html" class="club-item">
+                <img src="club/cyber.png" alt="Secure Sphere (Cyber & Web Security Club)">
+                <h3>Secure Sphere<br>(Cyber & Web Security Club)</h3>
+            </a>
+            <a href="clubs.html" class="club-item">
+                <img src="club/android.png" alt="App Loom (Mobile & Web App Club)">
+                <h3>App Loom<br>(Mobile & Web App Club)</h3>
+            </a>
+            <a href="clubs.html" class="club-item">
+                <img src="club/cloud.webp" alt="AstraCloud (Blockchain & Cloud Club)">
+                <h3>AstraCloud<br>(Blockchain & Cloud Club)</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-container">
+            <div class="event-item" style="background-image: url('event1bg.webp');">
+                <h3>UDAAN 2K25</h3>
+                <p>Date: Feb 3-8, 2025</p>
+                <p>Location: Zeal Institute, Narhe</p>
+            </div>
+            <div class="event-item" style="background-image: url('event2bg.webp');">
+                <h3>TALENTRON 2K25</h3>
+                <p>Date: Feb 3-8, 2025</p>
+                <p>Location: Zeal Institute, Narhe</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Information Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <p>Email: zcoer@zealeducation.com</p>
+            <p>Tel: +91 2067206000</p>
+            <p>Address: 3rd Floor, D-BLDG, Survey No.39, Zeal College of Engineering and Research, Narhe-Dhayari Road, Narhe, Pune-411041</p>
+            <p>&copy; Designed & Developed by <a class="developername1" href="https://www.linkedin.com/in/gauravrasane14/" target="_blank">Gaurav Rasane</a> of Computer Engg. Dept. ZCOER</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
+
+
+
+

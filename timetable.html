@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetables</title>
+    <link rel="stylesheet" href="studymaterial.css">
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="zcoer-gif1.gif" alt="University Logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="staff.html">Staff Section</a></li>
+            <li><a href="student.html">Student Section</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <section class="flash-news">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          <p>Kindly check the date of timetable before following.</p>
+        </marquee>
+    </section>
+
+    <!-- Section Title -->
+    <div class="section-title">
+        <h2>Division-wise Timetables - Computer Engineering</h2>
+        <p>Access TimeTables for each class and division below.</p>
+    </div>
+
+    <!-- Semester 3 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester3')">
+        <div class="triangle"></div>
+        <h3>SE TimeTables</h3>
+        <div class="subjects" id="semester3">
+            <a href="https://drive.google.com/file/d/1PnLJJra1rlmRtDSgq2munY25GLW-zJf3/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">SE - A</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1Q0YPcpO-R57RBqJJHeZ2592NYIz2KwC8/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">SE - B</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1Pu9q-F0sWZwYLPlJKybQaFbjGVRaYJl4/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">SE - C</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Semester 4 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester4')">
+        <div class="triangle"></div>
+        <h3>TE Timetables</h3>
+        <div class="subjects" id="semester4">
+            <a href="https://drive.google.com/file/d/1Q3q9G0z4W8hdSC7WbsygbovlMFHXSSJE/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">TE - A</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1Q2cAdXB5UWInw0DzlwuihufKpNjGVQOt/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">TE - B</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1Q4DZP3vPZifRlxCP5tf9lkOk8thc8lkK/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">TE - C</div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Semester 8 Section -->
+    <div class="semester-section" onclick="toggleSubjects('semester8')">
+        <div class="triangle"></div>
+        <h3>BE Timetables</h3>
+        <div class="subjects" id="semester8">
+            <a href="https://drive.google.com/file/d/1Q5upmLlOvG-6fy7IxKnKODqPi68ixaaS/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">BE - A</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1QGNaS_zw1hL9bPRSiCaeiT4z5XKsvFEk/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">BE - B</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1QHQN27NMocXnNMjWiqIW1jOWoutrKwlv/view?usp=drive_link" class="subject" target="_blank">
+                <div class="subject-title">BE - C</div>
+            </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <p>Email: zcoer@zealeducation.com</p>
+            <p>Tel: +91 2067206000</p>
+            <p>Address: 3rd Floor, D-BLDG, Survey No.39, Zeal College of Engineering and Research, Narhe-Dhayari Road, Narhe, Pune-411041</p>
+            <p>&copy; Designed & Developed by <a class="developername1" href="https://www.linkedin.com/in/gauravrasane14/" target="_blank">Gaurav Rasane</a> of Computer Engg. Dept. ZCOER</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle subjects
+        function toggleSubjects(semesterId) {
+            const subjects = document.getElementById(semesterId);
+            if (subjects.style.display === "none" || subjects.style.display === "") {
+                subjects.style.display = "grid"; // Show subjects as a grid
+            } else {
+                subjects.style.display = "none"; // Hide subjects
+            }
+        }
+
+        // JavaScript function to toggle navbar menu on mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

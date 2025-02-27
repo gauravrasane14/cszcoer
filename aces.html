@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACES Club</title>
+    <link rel="stylesheet" href="aces.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="zcoer-gif1.gif" alt="University Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="staff.html">Staff Section</a></li>
+            <li><a href="student.html">Student Section</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+    <br>
+    <h2>ASSOCIATION OF COMPUTER ENGINEERING STUDENTS (ACES)</h2>
+    <br>
+    <!-- Club Overview -->
+    <section class="club-overview">
+        <div class="div1"></div>
+        <img src="club/aces.jpg" alt="ACES Logo" class="club-group-photo">
+        <p><b>Association of Computer Engineering Students (ACES)</b>
+            <br>
+            Departement of Computer Engineering
+            <br><br>
+        The Association of Computer Engineering Students (ACES) is a dynamic student body dedicated to enhancing the academic and extracurricular experience of computer engineering students at Zeal College of Engineering and Research. ACES serves as a platform for students to come together, collaborate, and engage in activities that foster both professional and personal development. The association organizes workshops, technical seminars, coding competitions, and guest lectures from industry experts, providing students with opportunities to expand their knowledge and stay updated with the latest technological trends. Through events like hackathons and project exhibitions, ACES encourages innovation, teamwork, and practical problem-solving skills. Additionally, ACES plays a pivotal role in bridging the gap between students and the industry, offering valuable networking opportunities and helping students connect with potential career pathways. Overall, ACES is an essential part of the computer department, creating a thriving community where students can excel academically and professionally.
+        <br><i>"The power of a student association lies in its ability to unite diverse voices, amplify collective strength, and drive change that shapes both the present and future of the community."</i>
+        </p>
+        </div>
+    </section>
+
+
+    <!-- Events Conducted -->
+    <section class="club-events">
+        <h2>Events Conducted by ACES</h2>
+        <div class="event-item" data-title-photo="gallery/ed.png">
+            <h3>Engineers Day 2024</h3>
+            <p>Date: September 10, 2024<br><br></p>
+            <p>The Engineers' Day event, organized by ACES at Zeal College of Engineering and Research, is a celebration of the contributions of engineers to society and the advancement of technology. This event features a variety of activities such as guest lectures, technical workshops, competitions, and presentations that highlight the importance of engineering in shaping the future. The event aims to inspire students by showcasing the achievements of renowned engineers and providing a platform for them to engage with industry professionals. <br><br></p>
+        </div>
+
+        <div class="event-item" data-title-photo="gallery/acesteam.png">
+            <h3>ACES Team Event</h3>
+            <p>Date: March 10, 2024<br><br></p>
+            <p>The ACES Team Event 2024 was an exciting celebration of collaboration and creativity. With engaging activities, team-building challenges, and fun competitions, members showcased their skills and strengthened bonds. It was a day filled with energy, enthusiasm, and teamwork, reinforcing the spirit of unity and collaboration within the ACES community.<br><br></p>
+        </div>
+
+        <div class="event-item" data-title-photo="gallery/wddefence.png">
+            <h3>Women's Day Self Defence Workshop</h3>
+            <p>Date: March 08, 2024<br><br></p>
+            <p>ACES celebrated Women's Day by hosting a self-defense workshop aimed at empowering women with essential skills for personal safety. The workshop included practical techniques, confidence-building exercises, and awareness strategies, fostering a sense of security and self-assurance among participants. It was a meaningful way to honor the occasion.<br><br></p>
+        </div>
+
+        <div class="event-item" data-title-photo="gallery/befarewell22.png">
+            <h3>Fresher's Party 2024</h3>
+            <p>Date: January 10, 2024<br><br></p>
+            <p>ACES hosted an unforgettable Freshers' Party 2024, welcoming new students with excitement and energy. The event featured music, dancing, and interactive games, allowing freshers to bond, make new friends, and immerse themselves in the vibrant campus culture. It was a perfect start to their academic journey.<br><br></p>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Contact Information</h3>
+            <p>Email: zcoer@zealeducation.com</p>
+            <p>Tel: +91 2067206000</p>
+            <p>Address: 3rd Floor, D-BLDG, Survey No.39, Zeal College of Engineering and Research, Narhe-Dhayari Road, Narhe, Pune-411041</p>
+            <p>&copy; Designed & Developed by <a class="developername1" href="https://www.linkedin.com/in/gauravrasane14/" target="_blank">Gaurav Rasane</a> of Computer Engg. Dept. ZCOER</p>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+            <img id="modalImage" src="club/aces.jpg" alt="Event Image" class="modal-image">
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        const modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName("close")[0];
+
+        // Function to open modal with event details
+        function showModal(eventDetails, imageSrc) {
+            const modalContent = document.getElementById("modalContent");
+            const modalImage = document.getElementById("modalImage");
+            modalContent.innerHTML = eventDetails;
+            modalImage.src = imageSrc; // Set the image source
+            modal.style.display = "block";
+            modalImage.style.height="300px";
+            modalImage.style.width="auto";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        
+        // Add click event listeners to each event card
+const eventItems = document.querySelectorAll('.event-item');
+eventItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const details = item.innerHTML; // Remove the extra details part
+        const titlePhoto = item.getAttribute('data-title-photo'); // Get the title photo
+        showModal(details, titlePhoto);
+    });
+});
+
+    </script>
+</body>
+</html>
